@@ -1,0 +1,25 @@
+1. Add new worker by adding this string to Vagrantfile
+
+   config.vm.define "worker{x}" do |worker{x}|
+       worker{x}.vm.box = "Gfast/Myworker"
+       config.vm.box_version = "1.0.0"
+       config.vm.network :private_network, ip: "{y}"
+       config.vm.network "forwarded_port", guest: 22, host: {z}
+   end   
+
+   there x is number of client, y unique ip adress and {z} unique port.
+
+2. Type vagrant up worker{x} in console, new client with all necesarry files setups automaticly.
+
+3. Edit Ansible hosts file(Ansible/hosts.txt)
+   Copy this string
+   worker{x} ansible_ssh_host=127.0.0.1 ansible_ssh_port={z} ansible_user=vagrant ansible_ssh_private_key_file=../.vagrant/machines/worker{x}/virtualbox/private_key
+   
+   there x is number of client and z - assigned port.
+
+4. Go to directory servers and copy file worker{x}.cfg to directory transfer.
+   Raname  copyed file worker{x}.cfg in transfer directory and place your client number instead x.
+   Open file and replace {y} with you unique ip in string 7. Find and replace all {x} with your client number.
+   Run transfercfg script(./transfercfg)
+   
+   New client now working and monitored by nagios at main server.

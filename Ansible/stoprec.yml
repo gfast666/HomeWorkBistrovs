@@ -1,0 +1,8 @@
+- name: RabbitMQ stress test
+  hosts: workers
+  become: yes
+  
+  tasks:
+  - name: stopreceiving
+    shell: sudo /etc/init.d/startstress    
+  

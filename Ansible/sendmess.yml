@@ -1,0 +1,50 @@
+
+- name: RabbitMQ stress test
+  hosts: centr
+  become: yes
+  vars:
+    x: 1
+  
+  tasks:
+  
+  - name: override queue2
+    shell: cd ~
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send
+    
+  - name: overrirde3
+    shell: sudo java -cp .:amqp-client-5.7.1.jar:slf4j-api-1.7.26.jar:slf4j-simple-1.7.26.jar Send

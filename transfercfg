@@ -1,0 +1,6 @@
+#! /bin/sh
+
+cd Ansible
+ansible-playbook transfer.yml
+cd ..
+sudo rm servers/transfer/*

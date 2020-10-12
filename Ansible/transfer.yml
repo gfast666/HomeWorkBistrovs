@@ -1,0 +1,18 @@
+- name: Add client to nagios monitoring
+  hosts: centr
+  become: yes
+  
+  tasks:
+  - name: transfer cfg file
+    copy:
+      src: ../servers/transfer/
+      dest: /usr/local/nagios/etc/servers   
+
+  - name: fix permission
+    shell: sudo chmod -R 777 /usr/local/nagios/etc/servers/*
+    
+  - name: restart apache
+    shell: sudo service apache2 restart
+      
+  - name: restart nagios
+    shell: sudo service nagios restart   

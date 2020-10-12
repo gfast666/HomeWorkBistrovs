@@ -1,0 +1,7 @@
+[centr]
+central ansible_ssh_host=127.0.0.1 ansible_ssh_port=8080 ansible_user=vagrant ansible_ssh_private_key_file=../.vagrant/machines/central/virtualbox/private_key
+
+[workers]
+worker1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=8081 ansible_user=vagrant ansible_ssh_private_key_file=../.vagrant/machines/worker1/virtualbox/private_key
+#add another worker machines under this string
+

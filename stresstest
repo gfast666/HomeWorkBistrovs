@@ -1,0 +1,11 @@
+#! /bin/sh
+
+cd Ansible
+ansible-playbook stoprec.yml
+ansible-playbook sendmess.yml
+echo "Receiving stopped"
+echo "Messages have been sended. Please check nagios alert."
+echo "To start receiving again, press any key"
+read xxx
+ansible-playbook startrec.yml
+

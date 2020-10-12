@@ -1,0 +1,11 @@
+- name: RabbitMQ stress test
+  hosts: workers
+  become: yes
+  
+  tasks:
+  - name: start receiving
+    shell: cd ~  
+
+  - name: start receiving
+    shell: sudo nohup python receive.py &
+ 
